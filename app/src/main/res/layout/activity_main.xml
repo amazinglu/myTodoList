@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guojing.mytodolist.MainActivity">
+
+   <ListView
+       android:id="@+id/main_list_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:divider="#ffeeeeee"
+       android:dividerHeight="@dimen/divider_height"/>
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/main_recycler_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+   <!--<FrameLayout-->
+       <!--android:id="@+id/fragment_container"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent"/>-->
+
+   <android.support.design.widget.FloatingActionButton
+       android:id="@+id/main_add_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom|end"
+       android:layout_margin="@dimen/fab_margin"
+       android:src="@drawable/ic_add_white_24px"/>
+
+</android.support.design.widget.CoordinatorLayout>
